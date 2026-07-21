@@ -1,25 +1,49 @@
 @import url(reset.css);
 
-.container {
-  border: 1px solid #000000;
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, minmax(100px, 100px)); */
-
-  display: grid;
-  grid: repeat(2, minmax(100px, 100px)) / repeat(3, 1fr);
+.luckiest {
+  font-family: "Luckiest Guy";
+  /* line-height: 100%; */
 }
 
-.container div {
-  text-align: center;
+header {
+  background-image: url(/assets/images/svg-header-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.item {
-  background-color: mediumvioletred;
+.header-info {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  padding: 69px 24px;
 }
 
-.item-1 {
-  background-color: aqua;
-  grid-column: 3 / span 1;
-  grid-row: 2 / span 1;
+.header-info p {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px;
+  font-family: sans-serif;
+  gap: 27px;
+}
+
+.section h2 {
+  font-weight: 800;
+}
+
+.section p {
+  font-weight: 400;
+}
+
+footer {
+  background-color: #23272a;
+  display: flex;
+  justify-content: center;
+  padding: 44px 16px;
 }
