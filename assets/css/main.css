@@ -2,6 +2,11 @@
 
 .luckiest {
   font-family: "Luckiest Guy";
+  line-height: 100%;
+}
+
+.txt-cinza {
+  color: #23272a;
 }
 
 header {
