@@ -2,11 +2,10 @@
 
 .luckiest {
   font-family: "Luckiest Guy";
-  /* line-height: 100%; */
 }
 
 header {
-  background-image: url(./assets/images/svg-header-background.svg);
+  background-image: url(../images/svg-header-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
