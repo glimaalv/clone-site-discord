@@ -1,0 +1,25 @@
+@import url(reset.css);
+
+.container {
+  border: 1px solid #000000;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, minmax(100px, 100px)); */
+
+  display: grid;
+  grid: repeat(2, minmax(100px, 100px)) / repeat(3, 1fr);
+}
+
+.container div {
+  text-align: center;
+}
+
+.item {
+  background-color: mediumvioletred;
+}
+
+.item-1 {
+  background-color: aqua;
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+}
