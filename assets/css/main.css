@@ -1,14 +1,17 @@
 @import url(reset.css);
 
+/* aplicando a fonte do discord aos elementos com essa classe */
 .luckiest {
   font-family: "Luckiest Guy";
   line-height: 100%;
 }
 
+/* aplicando texto cinza nos elementos */
 .txt-cinza {
   color: #23272a;
 }
 
+/* estilo do header  */
 header {
   background-image: url(../images/svg-header-background.svg);
   background-repeat: no-repeat;
@@ -29,6 +32,13 @@ header {
   font-weight: 400;
 }
 
+.header-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* estilo das sections (todas possuem o mesmo) */
 .section {
   display: flex;
   flex-direction: column;
@@ -45,9 +55,38 @@ header {
   font-weight: 400;
 }
 
+/* estilo do footer */
 footer {
   background-color: #23272a;
   display: flex;
   justify-content: center;
   padding: 44px 16px;
+}
+
+/* inicio do design responsivo para telas maiores */
+@media (min-width: 800px) {
+  .luckiest {
+    text-align: center;
+  }
+
+  .header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 94px 15rem;
+  }
+
+  .header-info p {
+    text-align: center;
+  }
+
+  .header-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .section {
+    display: flex;
+  }
 }
