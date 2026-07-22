@@ -6,6 +6,14 @@
   line-height: 100%;
 }
 
+.h1-grow {
+  font-size: clamp(1.8rem, calc(3vw + 1rem), 5rem);
+}
+
+.h2-grow {
+  font-size: clamp(1.5rem, calc(1.1vw + 1rem), 5rem);
+}
+
 /* aplicando texto cinza nos elementos */
 .txt-cinza {
   color: #23272a;
@@ -21,6 +29,7 @@ header {
   background-image: url(../images/svg-header-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 /* div do header que agrupa todos os textos */
@@ -56,7 +65,7 @@ header {
 }
 
 .section h2 {
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .section p {
@@ -85,6 +94,13 @@ footer {
     text-align: center;
   }
 
+  header {
+    background-image: url(../images/svg-header-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   .header-info {
     display: flex;
     flex-direction: column;
@@ -94,6 +110,13 @@ footer {
 
   .header-info p {
     text-align: center;
+  }
+
+  .header-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    justify-content: center;
   }
 
   .section {
@@ -108,6 +131,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 16px;
   }
 
   .reverse-section {
