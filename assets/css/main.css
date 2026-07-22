@@ -11,7 +11,7 @@
 }
 
 .h2-grow {
-  font-size: clamp(1.5rem, calc(1.1vw + 1rem), 5rem);
+  font-size: clamp(1.5rem, calc(1.5vw + 1rem), 5rem);
 }
 
 /* aplicando texto cinza nos elementos */
@@ -119,10 +119,16 @@ footer {
     justify-content: center;
   }
 
+  .img-fluida {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+  }
+
   .section {
     display: flex;
     flex-direction: row;
-    padding: 40px 12rem;
+    padding: 40px 10rem;
     gap: 16px;
   }
 
